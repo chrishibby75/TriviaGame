@@ -1,0 +1,30 @@
+@font-face {
+    font-family:"Heart Breaking Bad";
+    src:url("Heart_Breaking_Bad.eot?") format("eot"),url("Heart_Breaking_Bad.woff") format("woff"),url("Heart_Breaking_Bad.ttf") format("truetype"),url("Heart_Breaking_Bad.svg#HeartBreakingBad") format("svg");font-weight:normal;font-style:normal;
+
+    }
+    html, body {
+        height: 100%;
+    }    
+
+body {
+    background: url(./background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;    
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#gamebox {
+    margin: 2% auto;        
+    background: #D4DD31;    
+    height: 99%;
+    width: 960px;
+
+    }
+
+h1 {
+    font-family: "Heart Breaking Bad";
+
+
+}
