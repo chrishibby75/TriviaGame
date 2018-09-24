@@ -8,7 +8,7 @@ $(document).on('click', '#start-over', function (e) {
 });
 
 $(document).on('click', '.answer-button', function (e) {
-    game.clicked();
+    game.clicked(e);
 });
 
 $(document).on('click', '#start', function (e) {
@@ -25,13 +25,13 @@ var questions = [{
     correctAnswer: "Albuquerque",
     image: "assets/images/abq.gif"
 }, {
-    question: "What/'s the name of the actor who plays Jesse?",
+    question: "What is the name of the actor who plays Jesse?",
     answers: ["RJ Mitte", "Bryon Cranston", "Aaron Paul", "Al Pacino"],
-    correctAnswer: "Bryon Cranston",
+    correctAnswer: "Aaron Paul",
     image: "assets/images/aPaul.gif"
 }, {
     question: "What type of weapon did the tweekers use to rob Skinny Pete?",
-    answers: ["pistol", "a pointy finger in the pocket", "kife", "rocket launcher"],
+    answers: ["pistol", "a pointy finger in the pocket", "knife", "rocket launcher"],
     correctAnswer: "knife",
     image: "assets/images/skinnypete.gif"
 }, {
@@ -48,7 +48,7 @@ var questions = [{
 }, {
     question: "Walt hires a shady lawyer.  What is the name of said lawyer?",
     answers: ["Johnny Cochran", "Chuck McGill", "Siegfried and Jensen", "Saul Goodman"],
-    correctAnswer: "Sual Goodman",
+    correctAnswer: "Saul Goodman",
     image: "assets/images/saul.gif"
 }, {
     question: "Name of member of Jesse Pinkman's crew.",
@@ -57,17 +57,17 @@ var questions = [{
     image: "assets/images/friends.gif"
 }, {
     question: "What is the name of the Gus Fring's restaurant?",
-    answer: ["Taco Time", "Los Pollos Hermanos", "Tios", "Del Taco"],
+    answers: ["Taco Time", "Los Pollos Hermanos", "Tios", "Del Taco"],
     correctAnswer: "Los Pollos Hermanos",
     image: "assets/images/pollos.gif"
 }];
 
 var game = {
     questions: questions,
-    currentQuestion: 0,
+    currentQuestion:0,
     counter: timerCountdown,
-    correct: 0,
-    incorrect: 0,
+    correct:0,
+    incorrect:0,
     countdown: function () {
         game.counter--;
         $('#counter-number').html(game.counter);
@@ -80,8 +80,8 @@ var game = {
     loadQuestion: function () {
         timer = setInterval(game.countdown, 1000);
         panel.html('<h2>' + questions[this.currentQuestion].question + '</h2>');
-        for (var i = 0; i < questions.length; i++) {
-            panel.append('<button class="answer-button" id="button"' + 'data-name="' + questions[this.currentQuestion].answer[i] + '">' + questions[this.currentQuestion].answers[i] + '</button>');
+        for (var i = 0; i < questions[this.currentQuestion].answers.length; i++) {
+            panel.append('<button class="answer-button" id="button"' + 'data-name="' + questions[this.currentQuestion].answers[i] + '">' + questions[this.currentQuestion].answers[i] + '</button>');
         }
     },
 
