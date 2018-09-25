@@ -43,7 +43,7 @@ var questions = [{
     question: "What event does Walter miss while dropping off his first batch of product to Gus?",
     answers: ["The birth of his daughter", "Junior's birthday party", "A doctor appointment", "His favorite episode of MASH"],
     correctAnswer: "The birth of his daughter",
-    image: "assets/images/pizza.gif"
+    image: "assets/images/Pizza.gif"
 
 }, {
     question: "Walt hires a shady lawyer.  What is the name of said lawyer?",
