@@ -12,7 +12,7 @@ $(document).on('click', '.answer-button', function (e) {
 });
 
 $(document).on('click', '#start', function (e) {
-    $('#sub-box').prepend('<h2>Time Remaining: <span id="counter-number">30</span>Seconds</h2>');
+    $('#sub-box').prepend('<h2>Time Remaining: <span id="counter-number">30</span> Seconds</h2>');
     game.loadQuestion();
 });
 
@@ -60,6 +60,16 @@ var questions = [{
     answers: ["Taco Time", "Los Pollos Hermanos", "Tios", "Del Taco"],
     correctAnswer: "Los Pollos Hermanos",
     image: "assets/images/pollos.gif"
+}, {
+    question: "Walter and Jesse team up with what sort of business so they can discreetly cook their product?",
+    answers: ["A moving company", "A house cleaning company", "A construction company", "A pest control company"],
+    correctAnswer: "A pest control company",
+    image: "assets/images/pest.gif"
+}, {
+    question: "What major heist do Walt and Jesse pull off to obtain a huge supply of methylamine?",
+    answers: ["They rob a chemical factory", "They steal a plane", "They take over a methylamine farm", "They rob a train"],
+    correctAnswer: "They rob a train",
+    image: "assets/images/train.gif"
 }];
 
 var game = {

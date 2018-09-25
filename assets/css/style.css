@@ -20,8 +20,23 @@ body {
     background: #D4DD31;    
     height: 99%;
     width: 960px;
-
+    opacity: .7;
     }
+
+    #sub-box{
+        position: relative;
+    }
+
+    button{
+        display:block;
+        width:50%;
+        height:20%;
+        margin: 0 auto;
+        border:none;
+        cursor: pointer;
+        background:transparent;
+        font-size: 42px;;
+      }
 
     img {
         height: 200px;
@@ -29,6 +44,28 @@ body {
 
 h1 {
     font-family: "Heart Breaking Bad";
+    font-size: 6.5em;
+    font-weight: bold;
+    padding-top: 2.5%;
+}
 
+h2{
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+  
+  h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
 
+#start {
+    margin-top: 10%;
+    border: 2px solid brown;
+    background: forestgreen;    
+}
+
+button:hover {
+    border: 2px solid brown;
+    background: forestgreen;
 }
