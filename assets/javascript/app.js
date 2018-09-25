@@ -51,7 +51,7 @@ var questions = [{
     correctAnswer: "Saul Goodman",
     image: "assets/images/saul.gif"
 }, {
-    question: "Name of member of Jesse Pinkman's crew.",
+    question: "Name a member of Jesse Pinkman's crew.",
     answers: ["Skinny Pete", "Badger", "Combo", "All of the above"],
     correctAnswer: "All of the above",
     image: "assets/images/friends.gif"
